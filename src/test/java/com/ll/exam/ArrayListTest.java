@@ -137,4 +137,18 @@ class ArrayListTest {
     }
 
 
+    @Test
+    void addAt(){
+
+        al.add(100);
+        al.add(200);
+        al.add(300);
+        al.add(400);
+
+        al.addAt(500, 1);
+
+        assertEquals(500, al.get(1));
+
+    }
+
 }
